@@ -1,0 +1,79 @@
+console.log("Vallabh Ghodke");
+var readlineSync = require('readline-sync');
+var userName=readlineSync.question("what is your name  ")
+console.log(userName)
+console.log("Welcome "+ userName)
+
+ var score=0;
+var age=readlineSync.question("is your age greater than 25")
+if(age==="no")
+{
+  console.log("you are right");
+  score=score+1;
+  console.log(score)
+}
+else
+{
+  console.log("wrong")
+    score=score-1;
+   console.log(score);
+}
+
+var city=readlineSync.question("is your city bokaro")
+if(city==="no")
+{
+  console.log("you are right");
+  score=score+1;
+  console.log(score)
+}
+else
+{
+  console.log("wrong")
+    score=score-1;
+   console.log(score);
+}
+
+function sum(a,b)
+{
+  var c=a+b;
+  return c;
+
+}
+console.log(sum(12,34));
+for(var i=0;i<5;i++)
+{
+  console.log(userName + i );
+}
+var num=readlineSync.question("enter number");
+
+var star="*"
+for(var j=0;j<num;j++)
+{ 
+console.log(star);
+star=star+"*";
+}
+
+var shoplist=[];
+console.log("enter items for shopping list")
+for(var i=1;i<=5;i++)
+{
+shoplist[i]=readlineSync.question("enter "+i  +"th item ")
+}
+var k=0;
+for(var i=1;i<=5;i++)
+{
+  if(i%2===1)
+  {
+    console.log(shoplist[i])
+  }
+}
+
+var questionOne = {
+  question : "Who is my favorite superhero?",
+  answer: "Dhruv",
+}
+
+var questionTwo = {
+  question: "Which is my favorite sad song?",
+  answer: "Channa Meraya",
+}
